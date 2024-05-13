@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME 🏠</title>
+</head>
+    <style>
+
+        body{
+            display: block;
+            background-size: cover;
+            background-image: url(fundo.jpg)
+
+        }
+
+        .acessibilidade {
+            width: 40px;
+            padding-left: 1290px;
+            cursor: pointer;
+            display:inline-block
+        }
+
+        .heart {
+            margin-top: 45px;
+            margin-bottom: -15px;
+            width: 100px;
+            margin-left: 630px;
+        }
+
+        .heart {
+      
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1, 1.2);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+        .logo {
+            color: rgb(255, 255, 255);
+            font-family: Calibri;
+            margin-top: 90px;
+        }
+
+        .init {
+            --color: #ffffff;
+            --color2: rgb(204, 2, 255);
+            padding: 0.5em 1.75em;
+            background-color: transparent;
+            border-radius: 18px;
+            border: .3px solid var(--color);
+            transition: .5s;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            z-index: 1;
+            font-weight: 300;
+            font-size: 17px;
+            font-family: 'Roboto', 'Segoe UI', sans-serif;
+            text-transform: uppercase;
+            color: var(--color);
+            display: inline-block;
+            
+}
+
+        .iniciar::after, .iniciar::before {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        transform: skew(90deg) translate(-50%, -50%);
+        position: absolute;
+        inset: 50%;
+        left: 25%;
+        z-index: -1;
+        transition: .5s ease-out;
+        background-color: var(--color);
+        }
+
+        .iniciar::before {
+        top: -50%;
+        left: -25%;
+        transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+        }
+
+        .iniciar:hover::before {
+        transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+        }
+
+        .iniciar:hover::after {
+        transform: skew(45deg) translate(-50%, -50%);
+        }
+
+        .iniciar:hover {
+        color: var(--color2);
+        }
+
+        .iniciar:active {
+        filter: brightness(.7);
+        transform: scale(.98);
+        }
+
+        .linha{
+            color: white;
+            justify-content: center;
+            display: flex;
+        }
+
+        .gog{
+            margin-left: 540px;
+            width: 40px;
+            cursor: pointer;
+        }
+
+        .fac{
+            margin-left: 50px;
+            width: 40px;
+            cursor: pointer;
+        }
+        .out{
+            margin-left: 60px;
+            width: 40px;
+            cursor: pointer;
+        }
+        
+
+    </style>
+<body>
+    
+    <a href="https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf"><img class="acessibilidade"src="acessibilityicon.png"></a>
+    <img class="heart" src="heart.png">
+    <p class="logo"><center><font color="white" size="55px">MATCHERS</font></center></p>
+
+        <div class="iniciar"><center><iniciar class="init"><center><a href="login.html"><font color="white"><i>LOGAR</i></font></a></center></iniciar></center></div></body>
+        <br>
+        <div class="cadastrar"><center><iniciar class="init"><center><a href="cadastro.html"><font color="white"><i>CADASTRAR-SE</i></font></a></center></iniciar></center></div>
+            <p class="linha">________________________________________________________</p>
+
+            <p class="par"><center><font color="white" size="5">Não tem cadastro? Logar com</font></center></p>
+
+            <a href="https://accounts.google.com"><img class="gog"src="googleicon.png"></a>
+            <a href="https://www.facebook.com"><img class="fac" src="facebook-13.png"></a>
+            <a href="https://outlook.live.com/"><img class="out" src="outlook.png"></a>
+</body>
+</html>
